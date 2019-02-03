@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from lrenu.views import index, register, login
+from lrenu.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
-    path('registra', register),
+    path('index', index),
+    path('register', register),
     path('login', login),
+    path('forgot-password', forgotPasswd),
 
 ]
