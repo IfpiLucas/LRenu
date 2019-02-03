@@ -19,10 +19,10 @@ from lrenu.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
-    path('index', index),
-    path('register', register),
-    path('login', login),
-    path('forgot-password', forgotPasswd),
+    path('', index, name='index'),
+    # path('index', index, name=''),
+    path('register', register, name='register'),
+    path('login', login, name='login'),
+    path('forgot-password', forgotPasswd, name="forgot"),
 
 ]
